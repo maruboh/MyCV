@@ -1,0 +1,84 @@
+:root {
+  --primary: #2a6ebb;
+  --light-bg: #f5f7fa;
+  --dark: #1a1a1a;
+}
+
+/* General Layout */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--light-bg);
+  color: var(--dark);
+  scroll-behavior: smooth;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.section-title {
+  text-align: center;
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* Hero Section */
+.hero {
+  height: 80vh;
+  background: linear-gradient(rgba(42,110,187,0.8), rgba(42,110,187,0.8)),
+              url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80')
+              center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.hero h1 {
+  font-weight: 700;
+}
+.hero .subtext {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* Cards */
+.skill-card, .project-card {
+  transition: all 0.3s ease;
+}
+.skill-card:hover, .project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Timeline */
+.timeline-item {
+  border-left: 3px solid var(--primary);
+  padding-left: 15px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary);
+}
+
+/* Links */
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.nav-link {
+  color: var(--dark) !important;
+}
+.nav-link:hover {
+  color: var(--primary) !important;
+}
